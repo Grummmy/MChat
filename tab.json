@@ -1,0 +1,1281 @@
+{
+  "Titan": {
+    "username": "Titan",
+    "ping": 140,
+    "uuid": "5ba79772-90fa-308e-b60f-df0092fb3133",
+    "displayName": {
+      "json": {
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false,
+        "extra": [
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#D6D6D6",
+            "text": "Titan"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": " "
+          }
+        ],
+        "text": ""
+      },
+      "text": "",
+      "extra": [
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#D6D6D6",
+            "text": "Titan"
+          },
+          "text": "Titan",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#D6D6D6"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": " "
+          },
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFFFFF"
+        }
+      ],
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "skinData": {
+      "url": "http://textures.minecraft.net/texture/5f5b3c4a378be63e3b8d0de77db58151fec766f847ac43fb27925a2ffd475ea3",
+      "model": "slim"
+    },
+    "profileKeys": null,
+    "gamemode": 0
+  },
+  "miFiX_269": {
+    "username": "miFiX_269",
+    "ping": 74,
+    "uuid": "c12fe77d-803c-37ce-a7ac-513c693eec18",
+    "displayName": {
+      "json": {
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false,
+        "extra": [
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": "Ⓒ"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": "✞"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#D6D6D6",
+            "text": "miFiX_269"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": "☆ "
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFA255",
+            "text": "Л"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFAC67",
+            "text": "о"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFB67A",
+            "text": "н"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFC08D",
+            "text": "д"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFCAA0",
+            "text": "о"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFD5B3",
+            "text": "н"
+          }
+        ],
+        "text": ""
+      },
+      "text": "",
+      "extra": [
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": "Ⓒ"
+          },
+          "text": "Ⓒ",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFFFFF"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": "✞"
+          },
+          "text": "✞",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFFFFF"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#D6D6D6",
+            "text": "miFiX_269"
+          },
+          "text": "miFiX_269",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#D6D6D6"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": "☆ "
+          },
+          "text": "☆ ",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFFFFF"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFA255",
+            "text": "Л"
+          },
+          "text": "Л",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFA255"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFAC67",
+            "text": "о"
+          },
+          "text": "о",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFAC67"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFB67A",
+            "text": "н"
+          },
+          "text": "н",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFB67A"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFC08D",
+            "text": "д"
+          },
+          "text": "д",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFC08D"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFCAA0",
+            "text": "о"
+          },
+          "text": "о",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFCAA0"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFD5B3",
+            "text": "н"
+          },
+          "text": "н",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFD5B3"
+        }
+      ],
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "skinData": {
+      "url": "http://textures.minecraft.net/texture/f88e69d2105cf2708af7a21661193d91cce497b81a838b54ee1647351ca18a93"
+    },
+    "profileKeys": null,
+    "gamemode": 0
+  },
+  "Enot__Vasia": {
+    "username": "Enot__Vasia",
+    "ping": 19,
+    "uuid": "67ea3ad9-b6bb-313c-89c5-6f4922889a0f",
+    "displayName": {
+      "json": {
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false,
+        "extra": [
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#D6D6D6",
+            "text": "Enot__Vasia"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": "★ "
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFA255",
+            "text": "Е"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFA962",
+            "text": "н"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFB06F",
+            "text": "о"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFB77D",
+            "text": "т"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFBF8A",
+            "text": "с"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFC698",
+            "text": "и"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFCDA5",
+            "text": "т"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFD5B3",
+            "text": "и"
+          }
+        ],
+        "text": ""
+      },
+      "text": "",
+      "extra": [
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#D6D6D6",
+            "text": "Enot__Vasia"
+          },
+          "text": "Enot__Vasia",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#D6D6D6"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": "★ "
+          },
+          "text": "★ ",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFFFFF"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFA255",
+            "text": "Е"
+          },
+          "text": "Е",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFA255"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFA962",
+            "text": "н"
+          },
+          "text": "н",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFA962"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFB06F",
+            "text": "о"
+          },
+          "text": "о",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFB06F"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFB77D",
+            "text": "т"
+          },
+          "text": "т",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFB77D"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFBF8A",
+            "text": "с"
+          },
+          "text": "с",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFBF8A"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFC698",
+            "text": "и"
+          },
+          "text": "и",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFC698"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFCDA5",
+            "text": "т"
+          },
+          "text": "т",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFCDA5"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFD5B3",
+            "text": "и"
+          },
+          "text": "и",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFD5B3"
+        }
+      ],
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "profileKeys": null,
+    "gamemode": 0
+  },
+  "Groom": {
+    "username": "Groom",
+    "ping": 139,
+    "uuid": "d7c5db2a-4f5e-37cd-882f-26bac612b3ae",
+    "displayName": {
+      "json": {
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false,
+        "extra": [
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#425DF5",
+            "text": "ᴍᴏᴅᴇʀ "
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#D6D6D6",
+            "text": "Groom"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": "★ "
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFA255",
+            "text": "Б"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFAC67",
+            "text": "у"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFB67A",
+            "text": "н"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFC08D",
+            "text": "к"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFCAA0",
+            "text": "е"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFD5B3",
+            "text": "р"
+          }
+        ],
+        "text": ""
+      },
+      "text": "",
+      "extra": [
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#425DF5",
+            "text": "ᴍᴏᴅᴇʀ "
+          },
+          "text": "ᴍᴏᴅᴇʀ ",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#425DF5"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#D6D6D6",
+            "text": "Groom"
+          },
+          "text": "Groom",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#D6D6D6"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": "★ "
+          },
+          "text": "★ ",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFFFFF"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFA255",
+            "text": "Б"
+          },
+          "text": "Б",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFA255"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFAC67",
+            "text": "у"
+          },
+          "text": "у",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFAC67"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFB67A",
+            "text": "н"
+          },
+          "text": "н",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFB67A"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFC08D",
+            "text": "к"
+          },
+          "text": "к",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFC08D"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFCAA0",
+            "text": "е"
+          },
+          "text": "е",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFCAA0"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFD5B3",
+            "text": "р"
+          },
+          "text": "р",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFD5B3"
+        }
+      ],
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "skinData": {
+      "url": "http://textures.minecraft.net/texture/57af4ff79fa05ccf1797108ff02bec53d085b3f8201c4b215ed4f727d01694d4"
+    },
+    "profileKeys": null,
+    "gamemode": 0
+  },
+  "nickname": {
+    "username": "nickname",
+    "ping": 0,
+    "uuid": "6558fcb0-fa07-387c-9bb7-c0352c92265b",
+    "displayName": {
+      "json": {
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false,
+        "extra": [
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#D6D6D6",
+            "text": "nickname"
+          },
+          {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": " "
+          }
+        ],
+        "text": ""
+      },
+      "text": "",
+      "extra": [
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#D6D6D6",
+            "text": "nickname"
+          },
+          "text": "nickname",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#D6D6D6"
+        },
+        {
+          "json": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "color": "#FFFFFF",
+            "text": " "
+          },
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underlined": false,
+          "strikethrough": false,
+          "obfuscated": false,
+          "color": "#FFFFFF"
+        }
+      ],
+      "bold": false,
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "skinData": {
+      "url": "http://textures.minecraft.net/texture/897b8e697bce75e8ac435518cc1fc7a8928de8341edc0124a84a448601c65cec"
+    },
+    "profileKeys": null,
+    "entity": {
+      "_events": {},
+      "_eventsCount": 0,
+      "id": 220460,
+      "position": {
+        "x": -13635.401264023563,
+        "y": 71,
+        "z": -7598.699999988079
+      },
+      "velocity": {
+        "x": 0,
+        "y": -0.0784000015258789,
+        "z": 0
+      },
+      "yaw": 2.9800137101171553,
+      "pitch": -0.4772838076597581,
+      "onGround": true,
+      "height": 1.8,
+      "width": 0.6,
+      "effects": {},
+      "equipment": [
+        {
+          "type": 588,
+          "count": 1,
+          "metadata": 0,
+          "nbt": {
+            "type": "compound",
+            "name": "",
+            "value": {
+              "Damage": {
+                "type": "int",
+                "value": 0
+              }
+            }
+          },
+          "stackId": null,
+          "name": "stone_sword",
+          "displayName": "Stone Sword",
+          "stackSize": 1,
+          "maxDurability": 131,
+          "slot": 36
+        },
+        null,
+        {
+          "type": 625,
+          "count": 1,
+          "metadata": 0,
+          "nbt": {
+            "type": "compound",
+            "name": "",
+            "value": {
+              "Damage": {
+                "type": "int",
+                "value": 0
+              }
+            }
+          },
+          "stackId": null,
+          "name": "leather_boots",
+          "displayName": "Leather Boots",
+          "stackSize": 1,
+          "maxDurability": 65,
+          "slot": 8
+        },
+        {
+          "type": 624,
+          "count": 1,
+          "metadata": 0,
+          "nbt": {
+            "type": "compound",
+            "name": "",
+            "value": {
+              "Damage": {
+                "type": "int",
+                "value": 0
+              }
+            }
+          },
+          "stackId": null,
+          "name": "leather_leggings",
+          "displayName": "Leather Pants",
+          "stackSize": 1,
+          "maxDurability": 75,
+          "slot": 7
+        },
+        {
+          "type": 623,
+          "count": 1,
+          "metadata": 0,
+          "nbt": {
+            "type": "compound",
+            "name": "",
+            "value": {
+              "Damage": {
+                "type": "int",
+                "value": 0
+              }
+            }
+          },
+          "stackId": null,
+          "name": "leather_chestplate",
+          "displayName": "Leather Tunic",
+          "stackSize": 1,
+          "maxDurability": 80,
+          "slot": 6
+        },
+        {
+          "type": 622,
+          "count": 1,
+          "metadata": 0,
+          "nbt": {
+            "type": "compound",
+            "name": "",
+            "value": {
+              "Damage": {
+                "type": "int",
+                "value": 0
+              }
+            }
+          },
+          "stackId": null,
+          "name": "leather_helmet",
+          "displayName": "Leather Cap",
+          "stackSize": 1,
+          "maxDurability": 55,
+          "slot": 5
+        }
+      ],
+      "isValid": true,
+      "metadata": [
+        0,
+        300,
+        null,
+        false,
+        false,
+        false,
+        0,
+        0,
+        20,
+        0,
+        false,
+        0,
+        0,
+        null,
+        0,
+        15,
+        127,
+        1,
+        {
+          "type": "compound",
+          "name": "",
+          "value": {}
+        },
+        {
+          "type": "compound",
+          "name": "",
+          "value": {}
+        }
+      ],
+      "passengers": [],
+      "vehicle": null,
+      "username": "nickname",
+      "type": "player",
+      "name": "player",
+      "eyeHeight": 1.62,
+      "attributes": {
+        "minecraft:generic.max_health": {
+          "value": 20,
+          "modifiers": []
+        },
+        "minecraft:generic.armor_toughness": {
+          "value": 0,
+          "modifiers": [
+            {
+              "uuid": "845db27c-c624-495f-8c9f-6020a9a58b6b",
+              "amount": 0,
+              "operation": 0
+            },
+            {
+              "uuid": "d8499b04-0e66-4726-ab29-64469d734e0d",
+              "amount": 0,
+              "operation": 0
+            },
+            {
+              "uuid": "9f3d476d-c118-4544-8365-64846904b48e",
+              "amount": 0,
+              "operation": 0
+            },
+            {
+              "uuid": "2ad3f246-fee1-4e67-b886-69fd380bb150",
+              "amount": 0,
+              "operation": 0
+            }
+          ]
+        },
+        "minecraft:generic.attack_speed": {
+          "value": 4,
+          "modifiers": [
+            {
+              "uuid": "fa233e1c-4180-4865-b01b-bcce9785aca3",
+              "amount": -2.4000000953674316,
+              "operation": 0
+            }
+          ]
+        },
+        "minecraft:generic.armor": {
+          "value": 0,
+          "modifiers": [
+            {
+              "uuid": "845db27c-c624-495f-8c9f-6020a9a58b6b",
+              "amount": 1,
+              "operation": 0
+            },
+            {
+              "uuid": "d8499b04-0e66-4726-ab29-64469d734e0d",
+              "amount": 2,
+              "operation": 0
+            },
+            {
+              "uuid": "9f3d476d-c118-4544-8365-64846904b48e",
+              "amount": 3,
+              "operation": 0
+            },
+            {
+              "uuid": "2ad3f246-fee1-4e67-b886-69fd380bb150",
+              "amount": 1,
+              "operation": 0
+            }
+          ]
+        },
+        "minecraft:generic.movement_speed": {
+          "value": 0.10000000149011612,
+          "modifiers": []
+        }
+      },
+      "isInWater": false,
+      "isInLava": false,
+      "isCollidedHorizontally": false,
+      "isCollidedVertically": true
+    },
+    "gamemode": 0
+  }
+}
