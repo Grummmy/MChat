@@ -8,12 +8,12 @@ const commands = [
     options: [
       {
         name: 'сервер',
-        description: 'Сервер, на котором вы хотите узнать онлайн.',
+        description: 'Сервер, на котором вы хотите узнать онлайн',
         type: ApplicationCommandOptionType.String,
         choices: [
           {
             name: 'Сириус',
-            value: 'sirius',
+            value: 'Sirius',
           },
           {
             name: 'Вега',
@@ -21,17 +21,25 @@ const commands = [
           },
           {
             name: 'Титан',
-            value: 'titan',
-          },
-          {
-            name: 'все сервера',
-            value: 'all',
+            value: 'Titan',
           },
         ],
         required: true,
       }
     ],
   },
+  {
+    name: "verify",
+    description: "Верефицируйтесь чтобы писать сообщения прямо из дискорда!",
+    options: [
+      {
+        name: 'ник',
+        description: 'Ваш никнейм на любом сервере CountryMC',
+        type: ApplicationCommandOptionType.String,
+        required: true,
+      }
+    ],
+  }
 ];
 
 const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_BOT_TOKEN);
