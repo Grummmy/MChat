@@ -2,13 +2,13 @@ require('dotenv').config();
 
 const crypto = require('crypto');
 const { Telegraf } = require('telegraf');
-const { Client, IntentsBitField, TextChannel, MessageFlags, Guild } = require("discord.js")
+const { Client, IntentsBitField, TextChannel } = require("discord.js")
 const sqlite3 = require('sqlite3').verbose();
 const mineflayer = require('mineflayer');
 
-const args = process.argv.slice(2);
+const args = process.argv.slice(3);
 let flags = {
-  "--servers": "wagyourtail",
+  "--servers": "Sirius,Titan",
   "--name": "messageService",
   "--host": "play.countrymc.net",
   "--version": "1.16.5",
@@ -45,17 +45,39 @@ const options = {
 }
 
 let chats = {
-  "wagyourtail": {
+  "Sirius": {
     telegram: {
       chat: [""],
       channel: "",
     },
     discord: {
-      channel: "1362652056904798208",
-      jl: "",
-      punish: "",
+      channel: "1362042717953069208",
+      jl: "1364322425046695988",
+      punish: "1364322665023930418",
     }
-  }
+  },
+  "Vega": {
+    telegram: {
+      chat: [""],
+      channel: "",
+    },
+    discord: {
+      channel: "1362042627213492237",
+      jl: "1364322906297077822",
+      punish: "1364322943361880124",
+    }
+  },
+  "Titan": {
+    telegram: {
+      chat: ["-1002553118324", 2],
+      channel: "-1002494802066",
+    },
+    discord: {
+      channel: "1362042799134081167",
+      jl: "1364323167451217960",
+      punish: "1364323187000610939",
+    }
+  },
 }
 
 const prefixes = {
@@ -88,7 +110,7 @@ function getDate() {
 }
 
 function log(msg, type, prefix) {
-  if (typeof type === undefined) type = ` - ${logtypes.d}`
+  if (typeof type === undefined) type = ` - ${logtypes['d']}`
   else if (logtypes[type]) type = ` - ${logtypes[type]}`
   else type = ` - ${type}`
   prefix = prefix ? ` - ${prefix}` : ""
@@ -194,7 +216,7 @@ function getDisplayName(player) {
 }
 
 function sendmsg(text, name, jl) {
-	const ansi = text.includes("\u001b") ? "```ansi\n"+text+"```" : text
+    const ansi = text.includes("\u001b") ? "```ansi\n"+text+"```" : text
   if (jl) {
     if (chats[name].discord.jl) chats[name].discord.jl.send(colorize(ansi))
     return
@@ -233,7 +255,7 @@ function createBot(options) {
   bot.on('spawn', () => {
     jl = false
     log(`Entered the server!`, "i", options.username);
-    setTimeout(() => {bot.chat(`/joinq titan`)}, 2000)
+    setTimeout(() => {bot.chat(`/joinq ${options.username}`)}, 2000)
   });
 
   bot.on('end', () => {
@@ -274,25 +296,25 @@ function createBot(options) {
   })
 
   bot.on("playerJoined", (player) => {
-  	if (jl) {
-  		const name = getDisplayName(player)
-  		if (!name.startsWith("[ZNPC]")) jl_messages.push(`${getDisplayName(player)}\u001b[0m зашел в игру`)
-		}
+    if (jl) {
+        const name = getDisplayName(player)
+        if (!name.startsWith("[ZNPC]")) jl_messages.push(`${getDisplayName(player)}\u001b[0m зашел в игру`)
+        }
   })
 
   bot.on("playerLeft", (player) => {
-  	if (jl) {
-  		const name = getDisplayName(player)
-  		if (!name.startsWith("[ZNPC]")) jl_messages.push(`${name}\u001b[0m вышел из игры`)
-  	}
+    if (jl) {
+        const name = getDisplayName(player)
+        if (!name.startsWith("[ZNPC]")) jl_messages.push(`${name}\u001b[0m вышел из игры`)
+    }
   })
 
   bot.on("message", async (message) => {
     const mes = message.toAnsi().trim().replaceAll("`", "​`")
     if (checkmsg(message.toString().trim())) messages.push(mes
-    	.replace("ᰁ", "G")
-    	.replace("ᰀ", "L")
-    	.replaceAll("§x", "")
+        .replace("ᰁ", "G")
+        .replace("ᰀ", "L")
+        .replaceAll("§x", "")
     )
 
     // match[1] -> nickname ; match[2] -> code ; match[3] -> message, if not a /link message
@@ -303,26 +325,27 @@ function createBot(options) {
           const user = unverified[match[1].toLowerCase()]
           delete unverified[match[1].toLowerCase()]
 
-          if (Date.now() - user.time >= 120000 || !user.code === match[2].toLowerCase()) {
-            return bot.chat(`/msg ${match[1]} к сожалению, ваш код более не валиден, либо истекло время кода, либо код неверный. пожалуйста, получите новый код и попробуйте ещё раз`)
+          if (Date.now() - user.time >= 120000 && !unverified[match[1].toLowerCase()].code === match[2].toLowerCase()) {
+            bot.chat(`/msg ${match[1]} к сожалению, ваш код более не валиден, либо истекло время кода, либо код неверный. пожалуйста, получите новый код и попробуйте ещё раз`)
+            return
           }
-
-          db.run("INSERT INTO users (id, name) VALUES (?, ?)", [user.member.user.id, match[1]], function(err) {
+          
+          db.run("INSERT INTO users (id, name) VALUES (?, ?)", [user.id, match[1]], function(err) {
             if (err) {
               return console.error(err.message);
             }
-            log(`[+] User \x1b[1${match[1]}\x1b[0m with id \x1b[1m${user.member.user.id}\x1b[0m`, 'i', options.username);
+            log(`[+] User \x1b[1${match[1]}\x1b[0m with id \x1b[1m${user.id}\x1b[0m`, 'i', options.username);
           });
 
           try {
-            const u = await dcbot.users.fetch(user.member.user.id)
-            await u.send(`Никнейм ${match[1]} успешно привязан к вашему дискорду!\nТеперь вы можете писать в майнкрафт прямо из **CMC Chats**`)
-            await user.member.roles.add("1362140752620294166")
+            const u = await dcbot.users.fetch(user.id)
+            await u.send(`Никнейм ${match[1]} успешно привязан к вашему дискорду!`)
+            await u.send("Теперь вы можете писать в майнкрафт прямо из **CMC Chats**")
           } catch (error) {
-            log(`Error while messaging ${user.member.user.id}:\n${error}`, 'e', options.username)
+            log(`Error while messaging ${user.id}:\n${error}`, 'e', options.username)
           }
 
-          bot.chat(`/msg ${match[1]} вы успешно привязали аккаунт ${match[1]} к ${user.member.user.username}! идите скорее и напишите же свое первое сообщение от лица бота)`)
+          bot.chat(`/msg ${match[1]} вы успешно привязали аккаунт ${match[1]} к ${user.username}! идите скорее и напишите же свое первое сообщение от лица бота)`)
         } else bot.chat(`/msg ${match[1]} вы не регестрировались!`)
       } else if (match[3]) bot.chat(`/msg ${match[1]} привет! я не игрок, а бот, я переношу все сообщения из глобал чата(сириуса, веги и даже титана!) в дс discord.gg/w5HJpE7vGB (код приглашения: w5HJpE7vGB). спешу сообщить что я никак не обхожу систему антибота, или как либо ломаю севрер`)
     }
@@ -342,14 +365,14 @@ function createBot(options) {
 
 dcbot.login(process.env.DISCORD_BOT_TOKEN)
 dcbot.once('ready', async () => {
-  log("Social bots started!", "i")
+  console.log("Social bots started!", "i")
 
   for (const name of flags['--servers'].split(",")) {
     chats[name].discord.channel = await dcbot.channels.fetch(chats[name].discord.channel)
     // log(`${name}'s channel fetched\n${chats[name].discord.channel}`)
-    // chats[name].discord.jl = await dcbot.channels.fetch(chats[name].discord.jl)
+    chats[name].discord.jl = await dcbot.channels.fetch(chats[name].discord.jl)
     // log(`${name}'s jl fetched\n${chats[name].discord.jl}`)
-    // chats[name].discord.punish = await dcbot.channels.fetch(chats[name].discord.punish)
+    chats[name].discord.punish = await dcbot.channels.fetch(chats[name].discord.punish)
     // log(`${name}'s punish fetched\n${chats[name].discord.punish}`)
 
     if (chats[name].discord.channel instanceof TextChannel) createBot({...options, username: name})
@@ -359,45 +382,37 @@ dcbot.once('ready', async () => {
 dcbot.on('interactionCreate', async (interaction) => {
   if (!interaction.isChatInputCommand()) return;
 
-  if (interaction.commandName === "verify") {
-    db.get("SELECT * FROM users WHERE id = ?", [interaction.user.id], (err, row) => {
-      if (err) {
-        console.error(err.message);
-        return;
-      }
-      if (row) return interaction.reply({
-        content: `Вы уже зарегестрированы на \`${row.name}\`!`,
-        flags: MessageFlags.Ephemeral
-      })
-    });
-    const nickname = interaction.options.get('ник').value.toLowerCase()
-    db.get("SELECT * FROM users WHERE id = ?", [interaction.user.id], (err, row) => {
-      if (err) {
-        console.error(err.message);
-        return;
-      }
-      if (row) return interaction.reply({
-        content: `Никнейм ${nickname} занят!`,
-        flags: MessageFlags.Ephemeral
-      })
-    });
+  if (interaction.commandName === 'online') {
+    let server = interaction.options.get('сервер').value.toLowerCase()
+    server = server[0].toUpperCase() + server.slice(1)
+    if (!Object.keys(bots).includes(server)) {
+      interaction.reply("Сервера `"+server+"` не существует!")
+      return
+    }
+    const online = getPlayers(bots[server])
 
+    await interaction.reply(`Онлайн ${server}:\n\`\`\`ansi${online[0]}\`\`\``);
+    for (const list of online.slice(1)) {
+      await interaction.followUp(`\`\`\`ansi${list}\`\`\``)
+    }
+  } else if (interaction.commandName === "verify") {
+    const nickname = interaction.options.get('ник').value.toLowerCase()
     if (!/^[a-z0-9_]*$/.test(nickname) && nickname.length <= 16 && nickname.length >= 3) {
       return interaction.reply({
         content: "Некорректный никнейм, пожалуйста попробуйте ещё раз",
-        flags: MessageFlags.Ephemeral
+        ephemeral: true
       })
     }
     const code = crypto.randomBytes(3).toString('hex');
     unverified[nickname] = {
       code: code,
-      member: interaction.member,
+      id: interaction.user.id,
+      username: interaction.user.username,
       time: Date.now()
     }
-
     return interaction.reply({
       content: `Почти готово! Зайдите на CountryMC, на любой сервер и напишите в лс боту с названием сервера \`/link ${code}\`\nПример для Титана: \`/msg Titan /link ${code}\``,
-      flags: MessageFlags.Ephemeral
+      ephemeral: true
     })
   }
 });

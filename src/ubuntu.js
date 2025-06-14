@@ -92,7 +92,7 @@ const re = /\u001b\[38;?(\d+;)?(\d+);(\d+);(\d+)m|\u001b\[(\d+;)?(\d+)m/g
 const originalWarn = console.warn;
 console.warn = function (message) {
   if (message.includes('Ignoring block entities as chunk failed to load')) {return}
-  originalWarn.apply(console, arguments);
+  originalWarn.apply(onsole, arguments);
 };
 
 function hexToRGB(hex) {
@@ -186,19 +186,21 @@ function createBot(options) {
   });
 
   bot.on('end', () => {
-    log(`Session ended, reconnecting in 3 seconds!`, "\x1b[33mEND\x1b[0m", options.username);
-    sendmsg("### Уух... что-то поплохело мне, отключаюсь.")
+    const sec = 7
+    log(`Session ended, reconnecting in ${sec} seconds!`, "\x1b[33mEND\x1b[0m", options.username);
+    sendmsg(`### Уух... что-то поплохело мне, отключаюсь. Постараюсь подключится через ${sec}сек`)
     if (ECONNREFUSE >= 3) {
       sendmsg("### Из-за множественного отключения по ECONNREFUSE, переподключусь через 5 минут.")
       setTimeout(() => createBot(options), 300000);
       ECONNREFUSE = 0
-    } else setTimeout(() => createBot(options), 3000);
+    } else setTimeout(() => createBot(options), sec*1000);
   });
 
   bot.on('kicked', (reason, loggedIn) => {
     loggedIn = loggedIn ? "\x1b[32mlogged in\x1b[0m" : "\x1b[31mnot logged in\x1b[0m"
     log(`Bot kicked :(\n${reason}`, "\x1b[31mERROR\x1b[0m - ${loggedIn}", options.username);
-    sendmsg("### Блэн, меня кикнули. Скоро переподключусь")
+    sendmsg("### Вот гады, кикнули меня!")
+    tgbot.telegram.sendMessage("5645707560", `Меня кикнули\!\! \:\_(\n\`\`\`json\n${reason}\n\`\`\``, { parse_mode: 'MarkdownV2' })
   });
 
   bot.on('error', err => {
@@ -216,6 +218,7 @@ function createBot(options) {
       }, 60000);
     }
     else sendmsg(`### Ужас, ${err.code} какой-то вылез и не хочет убираться.\n\`\`\`${err}\`\`\``)
+    tgbot.telegram.sendMessage("5645707560", err)
   });
 
   bot.on("message", async (message) => {
@@ -225,11 +228,11 @@ function createBot(options) {
     	// .replace("ᰁ", "G")
     	// .replace("ᰀ", "L")
     	.replaceAll("§x", "")
-      .replace("➺", "\x1b[0m")
     )
 
     // match[1] -> nickname ; match[2] -> code ; match[3] -> message, if not a /link message
-    const match = message.toString().match(/\[([a-z0-9_]*) -> Я\] (?:\/link ([0-9a-z]{6,})|(.*))/i)
+    const match = message.toString().match(/\[(?:\[.*\])? ([a-z0-9_]*) ?(?:\[.*\])? -> Я\] (?:\/link ([0-9a-z]{6,})|(.*))/i)
+    // (?:\/link ([0-9a-z]{6,})|(.*))
     if (match) {
       if (match[2]) {
         if (match[1].toLowerCase() in unverified) {
@@ -258,7 +261,7 @@ function createBot(options) {
 
           bot.chat(`/msg ${match[1]} вы успешно привязали аккаунт ${match[1]} к ${user.username}! идите скорее и напишите же свое первое сообщение от лица бота)`)
         } else bot.chat(`/msg ${match[1]} вы не регестрировались!`)
-      } else if (match[3]) bot.chat(`/msg ${match[1]} привет! я не игрок, а бот, я переношу все сообщения из глобал чата(сириуса, веги и даже титана!) в дс discord.gg/w5HJpE7vGB (код приглашения: w5HJpE7vGB). спешу сообщить что я никак не обхожу систему антибота, или как либо ломаю севрер`)
+      } else if (match[3]) bot.chat(`/msg ${match[1]} привет! я не игрок, а бот, но я хороший! я переношу все сообщения из майнкрафт чата в тгк(@vilgelm_mchat) и дс(discord.gg/ChJPb5rfse). прошу к подписке! (бруно и навазета в курсе о существовании данного проетка)`)
     }
   });
 
